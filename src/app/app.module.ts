@@ -10,6 +10,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { DxMapModule, DxSelectBoxModule } from 'devextreme-angular';
+import { DevExtremeModule } from 'devextreme-angular';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
+    DevExtremeModule,
+    DxMapModule,
+    DxSelectBoxModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
